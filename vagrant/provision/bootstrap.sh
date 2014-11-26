@@ -7,7 +7,7 @@ sudo cp -p /usr/share/zoneinfo/Japan /etc/localtime
 if ! [ `which ansible` ]; then
     sudo yum update -y
     sudo yum install -y ansible
-    cp /vagrant/playbook/servers /home/vagrant
+    cp /vagrant/servers /home/vagrant
     chmod 644 /home/vagrant/servers
 fi
 
