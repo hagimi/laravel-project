@@ -1,0 +1,4 @@
+---
+- include: ansible/common.yml
+- include: ansible/web-server.yml
+#- include: ansible/db-server.yml
