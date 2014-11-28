@@ -1,4 +1,11 @@
 ---
-- include: ansible/common.yml
-- include: ansible/web-server.yml
-#- include: ansible/db-server.yml
+- include: common.yml
+- hosts: web-server
+  sudo: yes
+  roles:
+    - httpd
+    - php
+#- hosts: db-server
+#  sudo: yes
+#  roles:
+#    - mysql
